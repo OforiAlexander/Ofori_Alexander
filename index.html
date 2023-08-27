@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@300;400;500;600&family=Source+Code+Pro:wght@300;400;500;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600&family=Source+Code+Pro:wght@300;400;500;600&display=swap"
             rel="stylesheet">
 
         <!-- alpine js -->
@@ -20,7 +20,7 @@
     </head>
 
     <body class="font-pop text-base">
-        <header x-data="{open: false}" class="relative">
+        <header x-data="{open: false}" class="relative" id="index">
             <div>
                 <nav
                     class="flex items-center justify-between px-12 w-full h-20 border-b border-b-gray-100 py-2 shadow-sm">
@@ -46,11 +46,12 @@
                     </div>
 
                 </nav>
-                <ul x-show="open" x-transition:enter x-transition:leave @scroll.window="open = false"
+                <ul x-show="open" x-transition:enter x-transition:leave
+                    @scroll.window="open = false"
                     class="px-4 bg-gray-50 py-4 w-80 float-right rounded-xl mt-2 absolute right-0 space-y-3 shadow-xl">
                     <li class="p-2">
                         <a href="#about"
-                            class="text-xl font-light font-pop hover:border-b hover:border-b-gray-800 hover:text-gray-600 transition-all ease-linear duration-300"
+                            class="text-xl font-light font-pop hover:border-b hover:border-b-gray-800 hover:text-gray-100 transition-all ease-linear duration-300"
                             @click="open = false">About</a>
                     </li>
                     <li class="p-2">
@@ -112,6 +113,7 @@
                         </div>
                     </div>
                 </div>
+
             </section><!---end of hero section-->
 
             <section id="about"
@@ -121,7 +123,7 @@
                         class="capitalize font-pop font-light text-lg text-gray-600">get
                         to know me</span>
                     <h3
-                        class="text-6xl mt-3 font-bold text-gray-800 font-lato">About
+                        class="text-5xl mt-3 font-bold text-gray-900 font-lato">About
                         Me</h3>
                 </div>
                 <div
@@ -149,13 +151,15 @@
                                     alt="Education" class="w-8 h-8">
                                 <h4 class="text-xl font-semibold text-lato mt-2">Education</h4>
                                 <p
-                                    class="text-center text-gray-600 font-light text-base">Basic High School 
+                                    class="text-center text-gray-600 font-light text-base">Basic
+                                    High School
                                     <span class="block">Diploma In
                                         Info Tech</span> </p>
 
                             </div>
                         </div>
-                        <p class="text-gray-600 font-lato mt-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                        <p class="text-gray-600 font-lato mt-6">Lorem ipsum
+                            dolor sit amet consectetur adipisicing
                             elit. Libero fugiat ea quod sit autem soluta dolorum
                             possimus veritatis? Animi dolorem tenetur qui
                             deleniti molestiae, modi perferendis maxime quos
@@ -169,10 +173,15 @@
                     </div>
                 </div>
                 <div class="absolute bottom-0 py-6 right-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="animate-bounce w-8 h-8 font-bold cursor-pointer" onclick="location.href='#experience'">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                      
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor"
+                        class="animate-bounce w-8 h-8 font-bold cursor-pointer"
+                        onclick="location.href='#experience'">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                    </svg>
+
                 </div>
             </section><!--end of about page-->
 
@@ -180,49 +189,362 @@
                 class="w-10/12 h-[100vh] mx-auto mt-8 px-4 gap-0 flex flex-col items-center justify-around relative">
                 <div class="w-full text-center mb-2">
                     <span
-                        class="capitalize font-pop font-light text-lg text-gray-600">zoom into my</span>
+                        class="capitalize font-pop font-light text-lg text-gray-600">zoom
+                        into my</span>
                     <h3
-                        class="text-6xl mt-3 font-bold text-gray-800 font-lato">Experience</h3>
+                        class="text-5xl mt-3 font-extrabold text-gray-900 font-lato">Experience</h3>
                 </div>
                 <div
                     class="w-full px-3 py-3 mx-auto flex items-center justify-center gap-8">
-                    
-                    <div class="w-3/5 py-4">
+
+                    <div class="w-full py-4">
                         <div class="flex items-center space-x-6">
                             <div
-                                class="border border-gray-500 w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
-                                <img src="./assert/experience.png"
-                                    alt="Experience" class="w-8 h-8">
-                                <h4 class="text-xl font-semibold text-lato mt-2">Experience</h4>
-                                <p
-                                    class="text-center text-gray-600 font-light text-base">2+
-                                    years <span class="block">Frontend
-                                        Development</span> </p>
+                                class="border cursor-pointer hover:bg-black hover:bg-opacity-30 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 group border-gray-500 w-full rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
+                                <div class="holder">
+                                    <h2
+                                        class="text-3xl font-extrabold text-gray-600 group-hover:text-gray-50 text-lato mt-2">Frontend
+                                        Development <span
+                                            class="fnd_border group-hover:w-full transition-all ease-in-out duration-500"></span></h2>
+                                </div>
+
+                                <div
+                                    class=" mt-3 flex flex-wrap gap-9 items-start justify-between py-8 px-4 w-full">
+                                    <div
+                                        class="flex space-x-2 gap-4 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-2 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-2 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-2 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-2 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-4 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                             <div
-                                class="border border-gray-500 w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
-                                <img src="./assert/education.png"
-                                    alt="Education" class="w-8 h-8">
-                                <h4 class="text-xl font-semibold text-lato mt-2">Education</h4>
-                                <p
-                                    class="text-center text-gray-600 font-light text-base">Basic High School 
-                                    <span class="block">Diploma In
-                                        Info Tech</span> </p>
+                                class="border cursor-pointer hover:bg-black hover:bg-opacity-30 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 group border-gray-500 w-full rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
+                                <div class="holder">
+                                    <h2
+                                        class="text-3xl font-extrabold text-gray-600 group-hover:text-gray-50 text-lato mt-2">Backend
+                                        Development <span
+                                            class="fnd_border group-hover:w-full transition-all ease-in-out duration-500"></span></h2>
+                                </div>
+
+                                <div
+                                    class=" mt-3 flex flex-wrap gap-9 items-start justify-between py-8 px-4 w-full">
+                                    <div
+                                        class="flex space-x-2 gap-4 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-2 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-2 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-2 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-2 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex gap-4 space-x-4 items-start justify-center">
+                                        <img src="./assert/check.png"
+                                            alt="Experience" class="w-8 h-8">
+                                        <div>
+                                            <h5
+                                                class="font-bold text-black text-xl font-pop">HTML</h5>
+                                            <span
+                                                class="font-pop font-normal group-hover:text-green-600 text-gray-600 text-base">Experienced</span>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
+
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="absolute bottom-0 py-6 right-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="animate-bounce w-8 h-8 font-bold cursor-pointer" onclick="location.href='#experience'">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                      
+                <div class="absolute bottom-0 py-6 -right-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor"
+                        class="animate-bounce w-8 h-8 font-bold cursor-pointer"
+                        onclick="location.href='#projects'">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                    </svg>
+
                 </div>
-            </section>
+            </section> <!--end of experience page-->
+
+            <section id="projects"
+                class="w-full mx-auto mt-8 px-4 gap-0 flex flex-col items-center justify-around relative">
+                <div class="w-full text-center mb-2">
+                    <span
+                        class="capitalize font-pop font-light text-base text-gray-600">A
+                        trip through my</span>
+                    <h3
+                        class="text-5xl mt-3 font-extrabold text-gray-900 font-lato">Projects</h3>
+                </div>
+
+                <div
+                    class="w-full px-3 py-3 mx-auto flex items-center justify-center gap-8">
+
+                    <div
+                        class="border border-black rounded-[32px] px-10 py-6 w-[500px]">
+                        <img src="./assert/project_1.png" alt="First Project"
+                            class="w-full h- rounded-[32px]">
+                        <div class="space-x-5 text-center mt-4">
+                            <h3 class="font-bold text-3xl font-pop my-4">Project
+                                One</h3>
+                            <button
+                                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                                onclick="location.href='https://github.com/oforiAlexander'"
+                                download>Github Repo</button>
+                            <button
+                                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                                onclick="window.open=('./files/cv.pdf')"
+                                download>Live Demo</button>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-black rounded-[32px] px-10 py-6 w-[500px]">
+                        <img src="./assert/project_2.png" alt="First Project"
+                            class="w-full h- rounded-[32px]">
+                        <div class="space-x-5 text-center mt-4">
+                            <h3 class="font-bold text-3xl font-pop my-4">Project
+                                Two</h3>
+                            <button
+                                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                                onclick="location.href='https://github.com/oforiAlexander'"
+                                download>Github Repo</button>
+                            <button
+                                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                                onclick="window.open=('./files/cv.pdf')"
+                                download>Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full px-3 py-3 mx-auto flex items-center justify-center">
+
+                    <div
+                        class="border border-black rounded-[32px] px-10 py-6 w-9/12 mx-auto">
+                        <img src="./assert/project_3.png" alt="Third Project"
+                            class="w-full h-9/12 rounded-[32px]">
+                        <div class="space-x-5 text-center mt-4">
+                            <h3 class="font-bold text-3xl font-pop my-4">Project
+                                One</h3>
+                            <button
+                                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                                onclick="location.href='https://github.com/oforiAlexander'"
+                                download>Github Repo</button>
+                            <button
+                                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                                onclick="window.open=('./files/cv.pdf')"
+                                download>Live Demo</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute bottom-0 py-6 right-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="animate-bounce w-8 h-8 font-bold cursor-pointer"
+                            onclick="location.href='#projects'">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                        </svg>
+
+                    </div>
+                </div>
+            </section><!--end of project page-->
         </main>
+
+        <footer id="contact" class="image w-10/12 mx-auto mt-8 px-6 pb-12 gap-0 pt-12 flex items-center justify-around border border-gray-900 rounded-3xl relative right-0 bottom-0">
+            <div class=" border w-full top-0 py-8 px-3 rounded-xl bg-black bg-opacity-50 flex items-center justify-center">
+                <form 
+                action="https://formspree.io/f/mbjvowpb"
+                method="POST"
+                class="w-full max-w-lg">
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label
+                                class="block uppercase tracking-wide text-gray-50 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Full Name
+                            </label>
+                            <input required
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="name" type="text" name="first_name">
+                            <p class="text-gray-100 text-xs italic"></p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label
+                                class="block uppercase tracking-wide text-gray-50 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Phone (eg: +233 --- --- -35)
+                            </label>
+                            <input required
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="phone" type="phone" name="phone">
+                            <p class="text-gray-100 text-xs italic">Not less than 8 characters</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label
+                                class="block uppercase tracking-wide text-gray-50 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Email
+                            </label>
+                            <input required
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="email" type="email" name="email">
+                            <p class="text-gray-100 text-xs italic">eg: example@mail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label
+                                class="block uppercase tracking-wide text-gray-50 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Message
+                            </label>
+                            <textarea required name="message"
+                                class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                                id="message"></textarea>
+                            <p class="text-gray-100 text-xs italic"></p>
+                        </div>
+                    </div>
+                    <div class="md:flex md:items-center">
+                        <div class="md:w-1/3">
+                            
+                            <button type="submit"
+                                class="px-6 py-4 hover:bg-gray-800 w-40 text-gray-50 transition-all ease-linear duration-200 border border-gray-100 rounded-full text-xs font-semibold"
+                                onclick="window.open=('./files/cv.pdf')"
+                                download>Send</button>
+                        </div>
+                        <div class="md:w-2/3"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="absolute bottom-0 py-6 -right-12">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="animate-bounce w-8 h-8 font-bold cursor-pointer"
+                    onclick="location.href='#index'">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+                </svg>
+
+            </div>
+        </footer><!--end of form page-->
     </body>
 
 </html>

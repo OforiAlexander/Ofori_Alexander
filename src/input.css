@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.fnd_border{
+    border: solid 2px black;
+    display: block;
+    opacity: 100%;
+    width: 0;
+}
+
+.image{
+    background-image: url('/assert/contact.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
