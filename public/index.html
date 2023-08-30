@@ -79,10 +79,10 @@
 
         <main >
             <section
-                class="w-10/12 h-[80vh] mx-auto mt-8 px-4 pb-12 gap-0 pt-12 flex items-center justify-around ">
-                <div class="basis-2/5 w-2/5 justify-end">
+                class="w-10/12 h-[80vh] mx-auto lg:mt-8 px-4 pb-12 gap-0 pt-12 flex flex-col lg:flex-row items-center text-center lg:text-left lg:justify-around ">
+                <div class="lg:basis-2/5 lg:w-2/5 justify-end">
                     <img src="./assert/hero.jpg" alt="My Profile"
-                        class="rounded-full float-right w-96 h-96 object-cover object-center">
+                        class="rounded-full float-right shrink-0 grow-0 w-80 h-80 lg:w-96 lg:h-96 object-cover object-center">
                 </div>
                 <div 
                 x-show="shown" x-transition
@@ -108,7 +108,7 @@
                                 Info</button>
                         </div>
                         <div
-                            class="mb-2 flex justify-center items-center w-52 space-x-3 ml-7">
+                            class="mb-2 flex justify-center items-center w-11/12 lg:w-52 space-x-3 ml-7">
                             <img src="./assert/linkedin.png"
                                 alt="LinkedIn Profile"
                                 class="w-8 h-8 cursor-pointer"
@@ -123,7 +123,7 @@
             </section><!---end of hero section-->
 
             <section id="about"
-                class="w-10/12 h-[100vh] mx-auto mt-8 px-4 gap-0 flex flex-col items-center justify-around relative">
+                class="lg:w-10/12 border-2 border-red-900 w-full lg:h-[100vh] lg:mx-auto mt-8 px-4 gap-0 flex flex-col items-center xl:justify-around relative">
                 <div class="w-full text-center mb-2">
                     <span
                         class="capitalize font-pop font-light text-lg text-gray-600">get
@@ -133,15 +133,15 @@
                         Me</h3>
                 </div>
                 <div
-                    class="w-full px-3 py-3 mx-auto flex items-center justify-center gap-8">
-                    <div class="w-2/5">
+                    class="w-full px-3 py-3 mx-auto flex items-center flex-col lg:flex-row justify-center gap-8">
+                    <div class="lg:w-2/5">
                         <img src="./assert/about.jpg" alt="About Me"
                             class="w-full h-[400px] rounded-3xl object-cover object-top">
                     </div>
-                    <div class="w-3/5 py-4">
-                        <div class="flex items-center space-x-6">
+                    <div class="w-full lg:w-3/5 py-4">
+                        <div class="flex flex-col md:flex-row gap-6 md:gap-0 justify-center lg:justify-normal items-center md:space-x-6">
                             <div
-                                class="border border-gray-500 w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
+                                class="border border-gray-500 w-[350px] lg:w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
                                 <img src="./assert/experience.png"
                                     alt="Experience" class="w-8 h-8">
                                 <h4 class="text-xl font-semibold text-lato mt-2">Experience</h4>
@@ -152,7 +152,7 @@
 
                             </div>
                             <div
-                                class="border border-gray-500 w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
+                                class="border border-gray-500 w-[350px] lg:w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
                                 <img src="./assert/education.png"
                                     alt="Education" class="w-8 h-8">
                                 <h4 class="text-xl font-semibold text-lato mt-2">Education</h4>
@@ -178,7 +178,7 @@
                             distinctio sequi omnis provident molestiae.</p>
                     </div>
                 </div>
-                <div class="absolute bottom-0 py-6 right-0">
+                <div class="absolute hidden lg:block bottom-0 py-6 right-0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor"
@@ -192,7 +192,7 @@
             </section><!--end of about page-->
 
             <section id="experience"
-                class="w-10/12 h-[100vh] mx-auto mt-8 px-4 gap-0 flex flex-col items-center justify-around relative">
+                class="lg:w-10/12 lg:h-[100vh] w-full border-2 border-blue-800 mx-auto mt-8 px-4 gap-0 flex flex-col items-center justify-around relative">
                 <div class="w-full text-center mb-2">
                     <span
                         class="capitalize font-pop font-light text-lg text-gray-600">zoom
@@ -204,7 +204,7 @@
                     class="w-full px-3 py-3 mx-auto flex items-center justify-center gap-8">
 
                     <div class="w-full py-4">
-                        <div class="flex items-center space-x-6">
+                        <div class="md:flex space-y-4 items-center md:space-x-6">
                             <div
                                 class="border cursor-pointer hover:bg-black hover:bg-opacity-30 shadow-md hover:shadow-lg transition-all ease-in-out duration-300 group border-gray-500 w-full rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
                                 <div class="holder">
@@ -215,7 +215,7 @@
                                 </div>
 
                                 <div
-                                    class=" mt-3 flex flex-wrap gap-9 items-start justify-between py-8 px-4 w-full">
+                                    class="mt-3 flex flex-wrap gap-9 items-start justify-between py-8 px-4 w-full">
                                     <div
                                         class="flex space-x-2 gap-4 items-start justify-center">
                                         <img src="./assert/check.png"
@@ -370,7 +370,7 @@
 
                     </div>
                 </div>
-                <div class="absolute bottom-0 py-6 -right-10">
+                <div class="lg:block hidden absolute bottom-0 py-6 -right-10">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor"
@@ -394,17 +394,17 @@
                 </div>
 
                 <div
-                    class="w-full px-3 py-3 mx-auto flex items-center justify-center gap-8">
+                    class="w-full px-3 py-3 mx-auto flex flex-col lg:flex-row items-center space-y-6 justify-center gap-8">
 
                     <div
-                        class="border border-black rounded-[32px] px-10 py-6 w-[500px]">
+                        class="border border-black rounded-[32px] px-10 py-6 w-[500px] shadow-md">
                         <img src="./assert/project_1.png" alt="First Project"
                             class="w-full h- rounded-[32px]">
                         <div class="space-x-5 text-center mt-4">
                             <h3 class="font-bold text-3xl font-pop my-4">Project
                                 One</h3>
                             <button
-                                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                                class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
                                 onclick="location.href='https://github.com/oforiAlexander'"
                                 download>Github Repo</button>
                             <button
@@ -414,14 +414,14 @@
                         </div>
                     </div>
                     <div
-                        class="border border-black rounded-[32px] px-10 py-6 w-[500px]">
+                        class="border border-black rounded-[32px] px-10 py-6 w-[500px] shadow-md">
                         <img src="./assert/project_2.png" alt="First Project"
                             class="w-full h- rounded-[32px]">
                         <div class="space-x-5 text-center mt-4">
                             <h3 class="font-bold text-3xl font-pop my-4">Project
                                 Two</h3>
                             <button
-                                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                                class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
                                 onclick="location.href='https://github.com/oforiAlexander'"
                                 download>Github Repo</button>
                             <button
@@ -453,7 +453,7 @@
                         </div>
                     </div>
 
-                    <div class="absolute bottom-0 py-6 right-12">
+                    <div class="hidden lg:block absolute bottom-0 py-6 right-12">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor"
