@@ -28,7 +28,7 @@
         <header x-data="{open: false}" class="relative" id="index">
             <div>
                 <nav
-                    class="flex items-center justify-between px-12 w-full h-20 border-b border-b-gray-100 py-2 shadow-sm">
+                    class="flex items-center justify-between md:px-12 px-4 w-full h-20 border-b border-b-gray-100 py-2 shadow-sm">
                     <div class="p-2 flex items-center justify-center">
                         <img src="./assert/alternative_logo.svg"
                             alt="Altanative Logo" class="w-10 h-10">
@@ -143,7 +143,7 @@
                     <div class="w-full lg:w-3/5 py-4">
                         <div class="flex flex-col md:flex-row gap-6 md:gap-0 justify-center lg:justify-normal items-center md:space-x-6">
                             <div
-                                class="border border-gray-500 w-[350px] lg:w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
+                                class="border border-gray-500 w-full lg:w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
                                 <img src="./assert/experience.png"
                                     alt="Experience" class="w-8 h-8">
                                 <h4 class="text-xl font-semibold text-lato mt-2">Experience</h4>
@@ -154,7 +154,7 @@
 
                             </div>
                             <div
-                                class="border border-gray-500 w-[350px] lg:w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
+                                class="border border-gray-500 w-full lg:w-[265px] rounded-[32px] py-5 px-7 flex flex-col items-center justify-center">
                                 <img src="./assert/education.png"
                                     alt="Education" class="w-8 h-8">
                                 <h4 class="text-xl font-semibold text-lato mt-2">Education</h4>
@@ -398,10 +398,10 @@
                     class="w-full px-3 py-3 mx-auto flex flex-col lg:flex-row items-center space-y-6 justify-center gap-8">
 
                     <div
-                        class="border border-black rounded-[32px] px-10 py-6 w-[500px] shadow-md">
+                        class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[500px] shadow-md">
                         <img src="./assert/project_1.png" alt="First Project"
                             class="w-full h- rounded-[32px]">
-                        <div class="space-x-5 text-center mt-4">
+                        <div class="lg:space-x-5 space-y-6 text-center mt-4">
                             <h3 class="font-bold text-3xl font-pop my-4">Project
                                 One</h3>
                             <button
@@ -415,10 +415,10 @@
                         </div>
                     </div>
                     <div
-                        class="border border-black rounded-[32px] px-10 py-6 w-[500px] shadow-md">
+                        class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[500px] shadow-md">
                         <img src="./assert/project_2.png" alt="First Project"
                             class="w-full h- rounded-[32px]">
-                        <div class="space-x-5 text-center mt-4">
+                        <div class="lg:space-x-5 space-y-6 text-center mt-4">
                             <h3 class="font-bold text-3xl font-pop my-4">Project
                                 Two</h3>
                             <button
@@ -440,7 +440,7 @@
                         class="border border-black rounded-[32px] px-10 py-6 w-full md:w-9/12 mx-auto">
                         <img src="./assert/project_3.png" alt="Third Project"
                             class="w-full h-9/12 rounded-[32px]">
-                        <div class="space-x-5 text-center mt-4">
+                        <div class="lg:space-x-5 space-y-6 text-center mt-4">
                             <h3 class="font-bold text-3xl font-pop my-4">Project
                                 One</h3>
                             <button
@@ -549,7 +549,7 @@
                 </form>
             </div>
 
-            <div class="absolute bottom-0 py-6 -right-12">
+            <div class="hidden lg:block absolute bottom-0 py-6 -right-12">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor"
