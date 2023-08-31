@@ -781,6 +781,10 @@ video {
   align-items: center;
 }
 
+.justify-normal {
+  justify-content: normal;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1039,8 +1043,8 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-\[120px\] {
-  padding-bottom: 120px;
+.pb-\[100px\] {
+  padding-bottom: 100px;
 }
 
 .pt-12 {
@@ -1352,11 +1356,6 @@ video {
 .group:hover .group-hover\:text-gray-50 {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-green-600 {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 @media (min-width: 730px) {
