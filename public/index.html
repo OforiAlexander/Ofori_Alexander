@@ -35,14 +35,14 @@
 
   <style>
     .cursor {
-        animation: blink 1s infinite;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
       }
-  
-      @keyframes blink {
-        50% {
-          opacity: 0;
-        }
-      }
+    }
   </style>
   <body class="font-pop text-base">
     <header x-data="{open: false}" class="relative" id="index">
@@ -145,21 +145,23 @@
               <small class="font-pro text-xl text-black ml-6">Hello, i'm</small>
               <div x-data="textAnimator" x-init="init()">
                 <h1 class="font-lato text-6xl font-semibold mb-6">
-                  Alexander Ofori, A <span :class="textColor" x-text="currentText"></span><span class="cursor">|</span>
+                  Alexander Ofori, A
+                  <span :class="textColor" x-text="currentText"></span
+                  ><span class="cursor">|</span>
                 </h1>
               </div>
               <span class="font-pop mt-4 text-2xl font-medium text-blue-600"
-                >I design and build simple yet beautiful applicaitons and i love
-                doing it.</span
+                >I design and build simple yet beautiful applicaitons, and i
+                love doing it.</span
               >
-              <div class="w-full flex justify-center my-6 items-end gap-12">
+              <div class="w-full space-y-6 md:spce-y-0 flex flex-col md:flex-row justify-center my-6 items-end gap-12">
                 <img
                   src="./assert/pro.jpeg"
                   alt="My Profile"
                   class="rounded-full float-right shrink-0 grow-0 w-72 h-[300px] object-cover object-center"
                 />
                 <div class="mb-12">
-                  <div class="mb-2 space-x-3">
+                  <div class="mb-2 space-y-4 md:space-y-0 space-x-0 md:space-x-3">
                     <a href="files/Alexander_Ofori.pdf" download>
                       <button
                         class="px-4 py-3 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border-2 border-gray-800 rounded-full text-sm font-light"
@@ -175,7 +177,7 @@
                     </button>
                   </div>
                   <div
-                    class="mb-2 flex justify-center items-center w-11/12 lg:w-52 space-x-3 ml-7"
+                    class="mb-2 flex md:justify-center items-center w-11/12 lg:w-52 space-x-3 ml-7"
                   >
                     <img
                       src="./assert/linkedin.png"
@@ -286,7 +288,7 @@
               </p>
             </div>
           </div>
-          <div class="absolute hidden lg:block bottom-0 py-6 right-0">
+          <div class="absolute hidden lg:block bottom-0 py-6 right-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -310,7 +312,10 @@
       <section
         class="w-full mx-auto mt-8 px-4 gap-0 flex flex-col items-center justify-around relative"
       >
-        <div class="max-w-6xl container border p-4 shadow-md rounded-md" id="experience">
+        <div
+          class="max-w-6xl container border p-4 shadow-md rounded-md"
+          id="experience"
+        >
           <div class="w-full text-center mb-2">
             <span class="capitalize font-pop font-light text-lg text-gray-600"
               >zoom into my</span
@@ -343,7 +348,6 @@
                     <div
                       class="flex space-x-2 gap-4 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           HTML
@@ -353,7 +357,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           CSS
@@ -363,7 +366,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           JavaScript
@@ -373,7 +375,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Bootstrap
@@ -383,7 +384,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           TailwindCss
@@ -393,7 +393,6 @@
                     <div
                       class="flex gap-4 space-x-4 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Alpine.js
@@ -403,7 +402,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           VueJs
@@ -413,7 +411,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Github
@@ -423,7 +420,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Netlify
@@ -433,7 +429,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Vercel
@@ -462,7 +457,6 @@
                     <div
                       class="flex space-x-2 gap-4 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Git
@@ -472,7 +466,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Laravel
@@ -482,7 +475,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           NodeJs
@@ -492,7 +484,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           MySQL
@@ -500,8 +491,8 @@
                       </div>
                     </div>
                     <div
-                      class="flex gap-4 space-x-2 items-start justify-center">
-                      
+                      class="flex gap-4 space-x-2 items-start justify-center"
+                    >
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           PHP
@@ -509,8 +500,8 @@
                       </div>
                     </div>
                     <div
-                      class="flex gap-4 space-x-2 items-start justify-center">
-                      
+                      class="flex gap-4 space-x-2 items-start justify-center"
+                    >
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Apache
@@ -518,8 +509,8 @@
                       </div>
                     </div>
                     <div
-                      class="flex gap-4 space-x-2 items-start justify-center">
-                      
+                      class="flex gap-4 space-x-2 items-start justify-center"
+                    >
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           C++
@@ -527,8 +518,8 @@
                       </div>
                     </div>
                     <div
-                      class="flex gap-4 space-x-2 items-start justify-center">
-                      
+                      class="flex gap-4 space-x-2 items-start justify-center"
+                    >
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           RestFul API
@@ -557,7 +548,6 @@
                     <div
                       class="flex space-x-2 gap-4 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Figma
@@ -567,7 +557,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Coral
@@ -577,7 +566,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Frontend Mentor
@@ -587,7 +575,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           Pen & Paper
@@ -597,7 +584,6 @@
                     <div
                       class="flex gap-4 space-x-2 items-start justify-center"
                     >
-                      
                       <div>
                         <h5 class="font-bold text-black text-xl font-pop">
                           PHP
@@ -922,42 +908,51 @@
 
     <!-- Script -->
     <script async>
-        document.addEventListener('alpine:init', () => {
-            Alpine.data('textAnimator', () => ({
-              careers: ["Software Developer", "Frontend Developer", "Freelancer", "Web Developer", "Trainer"],
-              currentCareerIndex: 0,
-              currentCharIndex: 0,
-              currentText: '',
-              typingSpeed: 200,
-              textColors: ['text-yellow-500', 'text-blue-500', 'text-green-500'],
-      
-              init() {
+      document.addEventListener("alpine:init", () => {
+        Alpine.data("textAnimator", () => ({
+          careers: [
+            "Software Developer",
+            "Frontend Developer",
+            "Freelancer",
+            "Web Developer",
+            "Trainer",
+          ],
+          currentCareerIndex: 0,
+          currentCharIndex: 0,
+          currentText: "",
+          typingSpeed: 200,
+          textColors: ["text-yellow-500", "text-blue-500", "text-green-500"],
+
+          init() {
+            this.updateText();
+          },
+
+          updateText() {
+            const currentCareer = this.careers[this.currentCareerIndex];
+            const nextChar = currentCareer.charAt(this.currentCharIndex);
+
+            if (nextChar) {
+              this.currentText += nextChar;
+              this.currentCharIndex++;
+              setTimeout(() => this.updateText(), this.typingSpeed);
+            } else {
+              setTimeout(() => {
+                this.currentCareerIndex =
+                  (this.currentCareerIndex + 1) % this.careers.length;
+                this.currentCharIndex = 0;
+                this.currentText = "";
                 this.updateText();
-              },
-      
-              updateText() {
-                const currentCareer = this.careers[this.currentCareerIndex];
-                const nextChar = currentCareer.charAt(this.currentCharIndex);
-      
-                if (nextChar) {
-                  this.currentText += nextChar;
-                  this.currentCharIndex++;
-                  setTimeout(() => this.updateText(), this.typingSpeed);
-                } else {
-                  setTimeout(() => {
-                    this.currentCareerIndex = (this.currentCareerIndex + 1) % this.careers.length;
-                    this.currentCharIndex = 0;
-                    this.currentText = '';
-                    this.updateText();
-                  }, 1000);
-                }
-              },
-      
-              get textColor() {
-                return this.textColors[this.currentCareerIndex % this.textColors.length];
-              }
-            }));
-          });
+              }, 1000);
+            }
+          },
+
+          get textColor() {
+            return this.textColors[
+              this.currentCareerIndex % this.textColors.length
+            ];
+          },
+        }));
+      });
     </script>
   </body>
 </html>
