@@ -154,14 +154,18 @@
                 >I design and build simple yet beautiful applicaitons, and i
                 love doing it.</span
               >
-              <div class="w-full space-y-6 md:spce-y-0 flex flex-col md:flex-row justify-center my-6 items-end gap-12">
+              <div
+                class="w-full space-y-6 md:spce-y-0 flex flex-col md:flex-row justify-center my-6 items-end gap-12"
+              >
                 <img
                   src="./assert/pro.jpeg"
                   alt="My Profile"
                   class="rounded-full float-right shrink-0 grow-0 w-72 h-[300px] object-cover object-center"
                 />
                 <div class="mb-12">
-                  <div class="mb-2 space-y-4 md:space-y-0 space-x-0 md:space-x-3">
+                  <div
+                    class="mb-2 space-y-4 md:space-y-0 space-x-0 md:space-x-3"
+                  >
                     <a href="files/Alexander_Ofori.pdf" download>
                       <button
                         class="px-4 py-3 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border-2 border-gray-800 rounded-full text-sm font-light"
@@ -617,6 +621,7 @@
       </section>
       <!--end of experience page-->
 
+      <!-- Project -->
       <section
         id="projects"
         class="w-full mx-auto mt-8 px-4 gap-0 flex flex-col items-center justify-around relative"
@@ -630,11 +635,72 @@
           </h3>
         </div>
 
-        <div
-          class="w-full px-3 py-3 mx-auto flex flex-col lg:flex-row items-center space-y-6 justify-center gap-8"
-        >
+        <!-- Scroll Snap -->
+        <!-- Snap Point -->
+        <!-- Contents -->
+        <div class="relative w-full flex gap-6 snap-x overflow-x-auto pb-14">
           <div
-            class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[500px] shadow-md"
+            class="shrink-0 border-2 border-red snap-center first:pl-8 last:pr-8"
+          >
+            <div
+              class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[350px] shadow-md">
+              <img
+                src="./assert/project_1.png"
+                alt="First Project"
+                class="w-full h- rounded-[32px]"
+              />
+              <div class="lg:space-x-5 space-y-6 text-center mt-4">
+                <h3 class="font-bold text-3xl font-pop my-4">Blog Template</h3>
+                <button
+                  class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                  onclick="location.href='https://github.com/OforiAlexander/Algebric_blog.git'"
+                  download
+                >
+                  Github Repo
+                </button>
+                <button
+                  class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                  onclick="location.href='https://algebric-blog.vercel.app/index.html'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="shrink-0 border-2 border-red snap-center first:pl-8 last:pr-8"
+          >
+          <div
+          class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[350px] shadow-md"
+        >
+          <img
+            src="./assert/project_1.png"
+            alt="First Project"
+            class="w-full h- rounded-[32px]"
+          />
+          <div class="lg:space-x-5 space-y-6 text-center mt-4">
+            <h3 class="font-bold text-3xl font-pop my-4">Blog Template</h3>
+            <button
+              class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+              onclick="location.href='https://github.com/OforiAlexander/Algebric_blog.git'"
+              download
+            >
+              Github Repo
+            </button>
+            <button
+              class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+              onclick="location.href='https://algebric-blog.vercel.app/index.html'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+          </div>
+          <div
+            class="shrink-0 border-2 border-red snap-center first:pl-8 last:pr-8"
+          >
+  <div
+            class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[350px] shadow-md"
           >
             <img
               src="./assert/project_1.png"
@@ -658,82 +724,96 @@
               </button>
             </div>
           </div>
+          </div>
           <div
-            class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[500px] shadow-md"
+            class="shrink-0 border-2 border-red snap-center first:pl-8 last:pr-8"
+          >
+  <div
+            class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[350px] shadow-md"
           >
             <img
-              src="./assert/project_2.png"
+              src="./assert/project_1.png"
               alt="First Project"
               class="w-full h- rounded-[32px]"
             />
             <div class="lg:space-x-5 space-y-6 text-center mt-4">
-              <h3 class="font-bold text-3xl font-pop my-4">
-                E-commerce Project Two
-              </h3>
+              <h3 class="font-bold text-3xl font-pop my-4">Blog Template</h3>
               <button
                 class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
-                onclick="location.href='https://github.com/OforiAlexander/Dress-with-cara.git'"
+                onclick="location.href='https://github.com/OforiAlexander/Algebric_blog.git'"
                 download
               >
                 Github Repo
               </button>
               <button
                 class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
-                onclick="location.href='https://e-buy-three.vercel.app/'"
-                download
+                onclick="location.href='https://algebric-blog.vercel.app/index.html'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-        </div>
-
-        <div class="w-full px-3 py-3 mx-auto flex items-center justify-center">
+          </div>
           <div
-            class="border border-black rounded-[32px] px-10 py-6 w-full md:w-9/12 mx-auto"
+            class="shrink-0 border-2 border-red snap-center first:pl-8 last:pr-8"
+          >
+  <div
+            class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[350px] shadow-md"
           >
             <img
-              src="./assert/project_3.png"
-              alt="Third Project"
-              class="w-full h-9/12 rounded-[32px]"
+              src="./assert/project_1.png"
+              alt="First Project"
+              class="w-full h- rounded-[32px]"
             />
             <div class="lg:space-x-5 space-y-6 text-center mt-4">
-              <h3 class="font-bold text-3xl font-pop my-4">
-                Laravel Blog Repository
-              </h3>
+              <h3 class="font-bold text-3xl font-pop my-4">Blog Template</h3>
               <button
                 class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
-                onclick="location.href='https://github.com/OforiAlexander/Personal-Blog-As-A-Beginner.git'"
+                onclick="location.href='https://github.com/OforiAlexander/Algebric_blog.git'"
                 download
               >
                 Github Repo
               </button>
               <button
                 class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
-                onclick="location.href='https://github.com/OforiAlexander/Personal-Blog-As-A-Beginner.git'"
-                download
+                onclick="location.href='https://algebric-blog.vercel.app/index.html'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-
-          <div class="hidden lg:block absolute bottom-0 py-6 right-12">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="animate-bounce w-8 h-8 font-bold cursor-pointer"
-              onclick="location.href='#projects'"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
-              />
-            </svg>
+          </div>
+          <div
+            class="shrink-0 border-2 border-red snap-center first:pl-8 last:pr-8"
+          >
+  <div
+            class="border border-black rounded-[32px] px-10 py-6 w-full lg:w-[350px] shadow-md"
+          >
+            <img
+              src="./assert/project_1.png"
+              alt="First Project"
+              class="w-full h- rounded-[32px]"
+            />
+            <div class="lg:space-x-5 space-y-6 text-center mt-4">
+              <h3 class="font-bold text-3xl font-pop my-4">Blog Template</h3>
+              <button
+                class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                onclick="location.href='https://github.com/OforiAlexander/Algebric_blog.git'"
+                download
+              >
+                Github Repo
+              </button>
+              <button
+                class="px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
+                onclick="location.href='https://algebric-blog.vercel.app/index.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          </div>
+          <div class="shrink-0 border-2 border-red snap-center">
+            <div class="shrink-0 w-4 sm:w-48"></div>
           </div>
         </div>
       </section>
