@@ -63,34 +63,36 @@
             </h3>
           </div>
 
-          <div
-            @click="open = !open"
-            x-on:
-            class="relative border-b flex align-bottom"
-          >
-            <div
-              class="cursor-pointer flex items-center justify-center gap-6 hover:rounded-full hover:bg-gray-100 transition-all duration-300 p-1"
+          <div class="relative border-b flex align-bottom">
+            <button
+              onclick="window.location.href='#contact'"
+              class="px-6 py-2 rounded-3xl duration-500 ease-in-out border border-blue-700 hover:bg-blue-700 hover:text-gray-50 text-blue-700"
             >
-              <button
-                onclick="window.location.href='#contact'"
-                class="px-6 py-2 rounded-3xl duration-500 ease-in-out border border-blue-700 hover:bg-blue-700 hover:text-gray-50 text-blue-700"
+              Say Hello
+            </button>
+            <div
+              @click="open = !open"
+              x-on:
+              class="relative border-b flex align-bottom"
+            >
+              <div
+                class="cursor-pointer flex items-center justify-center gap-6 hover:rounded-full hover:bg-gray-100 transition-all duration-300 p-1"
               >
-                Say Hello
-              </button>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-8 h-8 hover:transition-all hover:ease-out duration-200 hover:scale-75"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8 hover:transition-all hover:ease-out duration-200 hover:scale-75"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </nav>
@@ -655,7 +657,6 @@
                   <button
                     class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
                     onclick="location.href='https://github.com/OforiAlexander/16-JS-PROJECTS.git'"
-                    
                   >
                     Github Repo
                   </button>
@@ -686,7 +687,6 @@
                   <button
                     class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
                     onclick="location.href='https://github.com/OforiAlexander/Personal-Blog-As-A-Beginner.git'"
-                    
                   >
                     Github Repo
                   </button>
@@ -717,7 +717,6 @@
                   <button
                     class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
                     onclick="location.href='https://github.com/OforiAlexander/Dress-with-cara.git'"
-                    
                   >
                     Github Repo
                   </button>
@@ -772,7 +771,6 @@
                   <button
                     class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
                     onclick="location.href='https://github.com/OforiAlexander/Mimetect.git'"
-                    
                   >
                     Github Repo
                   </button>
@@ -870,7 +868,9 @@
                 class="w-full h-60 rounded-[32px]"
               />
               <div class="lg:space-x-5 space-y-6 text-center mt-4">
-                <h3 class="font-bold text-3xl font-pop my-4">Quality Assurance</h3>
+                <h3 class="font-bold text-3xl font-pop my-4">
+                  Quality Assurance
+                </h3>
                 <div class="flex gap-4 justify-center">
                   <button
                     class="md:mb-3 mb-0 px-6 py-4 hover:bg-gray-800 hover:text-gray-50 transition-all ease-linear duration-200 border border-gray-600 rounded-full text-xs font-semibold"
@@ -882,7 +882,6 @@
               </div>
             </div>
           </div>
-          
         </div>
         <!-- Arrow Indicators -->
         <div class="swiper-arrow-prev">
@@ -946,7 +945,7 @@
       <!--end of project page-->
     </main>
 
-    <section class="relative overflow-hidden bg-gray- py-20">
+    <section id="contact" class="relative overflow-hidden bg-gray- py-20">
       <div class="w-full text-center mb-2">
         <span class="capitalize font-pop font-light text-base text-gray-600"
           >Say Hello, Let's Connect</span
@@ -1094,9 +1093,9 @@
               <!-- End Of Model -->
 
               <p class="text-body-color mb-9 text-base leading-relaxed">
-                Excited to connect? I'm all ears! Drop me a line through
-                the channel above, and I'll respond with a friendly smile and
-                my undivided attention. Whether you have a burning question, a
+                Excited to connect? I'm all ears! Drop me a line through the
+                channel above, and I'll respond with a friendly smile and my
+                undivided attention. Whether you have a burning question, a
                 brilliant idea, or just want to say hello, my virtual door is
                 always open. I'm always ready to work. Let us push each other
                 through the world of development.
