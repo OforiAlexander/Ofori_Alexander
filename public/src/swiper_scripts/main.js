@@ -1,6 +1,8 @@
 var swiper = new Swiper(".project", {
     slidesPerView: 1,
-    centeredSlides: false,
+    centeredSlides: true,
+    loop: true,
+    fade:true,
     grabCursor: true,
     keyboard: {
       enabled: true,
@@ -11,9 +13,6 @@ var swiper = new Swiper(".project", {
         slidesPerGroup: 1,
       },
     },
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
     navigation: {
       nextEl: ".swiper-arrow-next",
       prevEl: ".swiper-arrow-prev",
@@ -21,5 +20,6 @@ var swiper = new Swiper(".project", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true
     },
   });
