@@ -141,14 +141,15 @@
 
     <main>
       <section
-        class="w-10/12 mx-auto px-4 pb-12 gap-0 pt-4 flex flex-col lg:flex-row items-center text-center lg:text-left lg:justify-around"
+        class="w-10/12 mx-auto px-4 pb-12 gap-0 flex flex-col lg:flex-row items-center text-center lg:text-left lg:justify-around"
+
       >
-        <div x-show="shown" x-transition class="py-12 my-8">
+        <div x-show="shown" x-transition class="py-12">
           <div class="container px-4">
             <div class="mb-4 text-center">
               <small class="font-pro text-xl text-black ml-6">Hello, i'm</small>
               <div x-data="textAnimator" x-init="init()">
-                <h1 class="font-lato text-6xl font-semibold mb-6">
+                <h1 class="font-lato text-4xl font-semibold mb-6">
                   Alexander Ofori, A
                   <span :class="textColor" x-text="currentText"></span
                   ><span class="cursor">|</span>
