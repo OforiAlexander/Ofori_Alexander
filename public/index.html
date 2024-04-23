@@ -66,7 +66,7 @@
           <div class="relative border-b flex align-bottom">
             <button
               onclick="window.location.href='#contact'"
-              class="px-6 py-2 rounded-3xl duration-500 ease-in-out border border-blue-700 hover:bg-blue-700 hover:text-gray-50 text-blue-700"
+              class="px-6 py-2 rounded-3xl duration-500 text-sm sm:text-base whitespace-nowrap ease-in-out border border-blue-700 hover:bg-blue-700 hover:text-gray-50 text-blue-700"
             >
               Say Hello
             </button>
@@ -148,24 +148,26 @@
             <div class="mb-4 text-center">
               <small class="font-pro text-xl text-black ml-6">Hello, i'm</small>
               <div x-data="textAnimator" x-init="init()">
-                <h1 class="font-lato text-4xl font-semibold mb-6">
+                <h1 class="font-lato text-xl sm:text-2xl lg:text-4xl font-semibold mb-6">
                   Alexander Ofori, A
                   <span :class="textColor" x-text="currentText"></span
                   ><span class="cursor">|</span>
                 </h1>
               </div>
-              <span class="font-pop mt-4 text-2xl font-medium text-blue-600"
+              <span class="font-pop mt-4 text-base sm:text-lg md:text-2xl font-medium text-blue-600"
                 >I design and build professional yet beautiful applicaitons, and
                 i love doing it.</span
               >
               <div
                 class="w-full md:spce-y-0 flex flex-col md:flex-row justify-center my-6 md:items-end md:space-y-6 space-y-2 md:gap-12 gap-6"
               >
-                <img
-                  src="./assert/pro.jpeg"
-                  alt="My Profile"
-                  class="rounded-full float-right shrink-0 grow-0 w-72 h-[300px] object-cover object-center"
-                />
+                <div class="sm:flex items-center justify-center lg:block">
+                  <img
+                    src="./assert/pro.jpeg"
+                    alt="My Profile"
+                    class="rounded-full float-right shrink-0 grow-0 w-72 md:h-[300px] object-cover object-center"
+                  />
+                </div>
                 <div class="mb-12">
                   <div
                     class="mb-2 space-y-4 md:space-y-0 space-x-0 md:space-x-3"
